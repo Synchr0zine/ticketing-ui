@@ -275,17 +275,24 @@
                                             <label>Gender</label>
                                             <br>
                                             <label class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" name="gender" checked="" class="custom-control-input" value="male">
+                                                <input type="radio" name="gender" checked=""
+                                                       class="custom-control-input" value="male">
                                                 <span class="custom-control-label">Male</span>
                                             </label>
                                             <label class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" name="gender" checked="" class="custom-control-input" value="female">
+                                                <input type="radio" name="gender" checked=""
+                                                       class="custom-control-input" value="female">
                                                 <span class="custom-control-label">Female</span>
                                             </label>
 
                                         </div>
                                         <div class="form-group col-3">
-
+                                            <label for="role">Select a role</label><select class="custom-select d-block w-100" id="role" required="required">
+                                                <option value="" selected disabled>Choose...</option>
+                                                <option value="admin">Admin</option>
+                                                <option value="manager">Manager</option>
+                                                <option value="employee">Employee</option>
+                                            </select>
                                         </div>
                                     </div>
 
