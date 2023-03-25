@@ -3,7 +3,7 @@
 <head>
     <script type="text/javascript" src="https://livejs.com/live.js"></script>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -13,8 +13,8 @@
             rel="stylesheet"
             href="assets/vendor/bootstrap/css/bootstrap.min.css"
     />
-    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/libs/css/style.css" />
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/libs/css/style.css"/>
     <link
             rel="stylesheet"
             href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css"
@@ -31,7 +31,7 @@
             rel="stylesheet"
             href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css"
     />
-    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css" />
+    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css"/>
     <link
             rel="stylesheet"
             href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css"
@@ -208,18 +208,180 @@
     <div class="dashboard-wrapper">
         <div class="dashboard-ecommerce">
             <div class="container-fluid dashboard-content">
-                <!-- ============================================================== -->
-                <!-- pageheader  -->
-                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- ============================================================== -->
+                        <!-- pageheader  -->
+                        <!-- ============================================================== -->
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="page-header" id="top">
+                                    <h2 class="pageheader-title">Task Create </h2>
+                                </div>
+                            </div>
+                        </div>
 
-                <!-- ============================================================== -->
-                <!-- end pageheader  -->
-                <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- end pageheader  -->
+                        <!-- ============================================================== -->
+
+                        <!-- ============================================================== -->
+                        <!-- form  -->
+                        <!-- ============================================================== -->
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <form>
+                                    <div class="row">
+                                        <div class="form-group col-6">
+                                            <label for="dropdown-project" class="col-form-label">Project</label>
+                                            <select class="form-control" id="dropdown-project">
+                                                <option selected disabled>Select</option>
+                                                <option>PJ001</option>
+                                                <option>PJ002</option>
+                                                <option>PJ003</option>
+                                                <option>PJ003</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6">
+                                            <label for="dropdown-employee" class="col-form-label">Assigned Employee</label>
+                                            <select class="form-control" id="dropdown-employee">
+                                                <option selected disabled>Select</option>
+                                                <option>Ozzy</option>
+                                                <option>Mark</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6">
+                                            <label for="task-subject" class="col-form-label">Task Subject</label>
+                                            <input id="task-subject" type="text" placeholder="Task Subject"
+                                                   class="form-control">
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6">
+                                            <label>Task Detail</label>
+                                            <textarea placeholder="Write your task details" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6">
+                                            <button class="btn btn-success float-right" type="submit">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end form  -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- start table  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header" id="bottom">
+                                <h2 class="pageheader-title">Task List</h2>
+                            </div>
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Project</th>
+                                    <th scope="col">Task Subject</th>
+                                    <th scope="col">Assigned Employee</th>
+                                    <th scope="col">Assigned Date</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>PRJ001-Human Resource CRM</td>
+                                    <td>Database Connection</td>
+                                    <td>Craig Jark</td>
+                                    <td>03/11/2022</td>
+                                    <td>In Progress</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <button class="btn btn-warning btn-sm">Update</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </a>
+
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>PRJ001-Infra Upgrade</td>
+                                    <td>Server Lan Settings</td>
+                                    <td>Shaun Haynak</td>
+                                    <td>03/13/2022</td>
+                                    <td>UAT Testing</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <button class="btn btn-warning btn-sm">Update</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </a>
+
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>PRJ001-Human Resource CRM</td>
+                                    <td>REST Code Development</td>
+                                    <td>Craig Jark</td>
+                                    <td>03/08/2022</td>
+                                    <td>Complete</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <button class="btn btn-warning btn-sm">Update</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </a>
+
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>PRJ001-Human Resource CRM</td>
+                                    <td>General Analysis</td>
+                                    <td>Craig Jark</td>
+                                    <td>03/08/2022</td>
+                                    <td>Open</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <button class="btn btn-warning btn-sm">Update</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </a>
+
+
+                                    </td>
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- end table  -->
+                    <!-- ============================================================== -->
+
+                </div>
             </div>
         </div>
-        <!-- ============================================================== -->
-
-        <!-- ============================================================== -->
     </div>
     <!-- ============================================================== -->
     <!-- end wrapper  -->
